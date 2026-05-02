@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Synet — Science, Sea, and the Internet. Your bilingual guide to ocean science, marine life, conservation, deep sea exploration, and climate." />
+  <meta property="og:title" content="Synet — Science · Sea · Internet" />
+  <meta property="og:description" content="Your bilingual guide to the ocean." />
+  <meta property="og:type" content="website" />
+  <title>Synet — Science · Sea · Internet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230b3d54'/><text y='.9em' font-size='70' x='12'>🌊</text></svg>" />
+</head>
+<body class="page-body">
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">S</div>
+        <span class="nav-logo-text">Synet</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" onclick="setLang('en')" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="id" onclick="setLang('id')" aria-pressed="false">ID</button>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" id="mobileNav" aria-hidden="true">
+    <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+    <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="overline hero-overline" data-i18n="hero.overline">Ocean Science · Bilingual</p>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">The ocean holds</span><br>
+          <em data-i18n="hero.title2">95% of Earth's</em><br>
+          <span data-i18n="hero.title3">living space.</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Synet explores the science, life, and future of the world's oceans — in Indonesian and English. From bioluminescent depths to rising seas.
+        </p>
+        <div class="hero-cta">
+          <a href="articles.html" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Explore Articles</a>
+          <a href="about.html" class="btn btn-secondary btn-lg" data-i18n="hero.cta2">About Synet</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200&q=80"
+          alt="Deep ocean scene"
+          loading="eager"
+        />
+        <p class="hero-image-caption" data-i18n="hero.imgcaption">Pacific Ocean · 1,200m depth</p>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span data-i18n="hero.scroll">scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== STATS BAR ===== -->
+    <section class="stats-bar" aria-label="Ocean facts">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <div class="stat-number">71%</div>
+          <div class="stat-label" data-i18n="stats.earth">of Earth's surface</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">11km</div>
+          <div class="stat-label" data-i18n="stats.depth">deepest point</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">230K+</div>
+          <div class="stat-label" data-i18n="stats.species">known species</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">80%</div>
+          <div class="stat-label" data-i18n="stats.unexplored">still unexplored</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15</div>
+          <div class="stat-label" data-i18n="stats.articles">articles published</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAVE DIVIDER -->
+    <div class="ocean-wave-divider" aria-hidden="true" style="background:var(--deep);">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="var(--pearl)"/>
+      </svg>
+    </div>
+
+    <!-- ===== FEATURED ARTICLES ===== -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="overline section-label" data-i18n="featured.label">Featured Stories</p>
+            <h2 class="section-title" data-i18n="featured.title">From the Deep</h2>
+            <div class="section-divider"></div>
+          </div>
+          <a href="articles.html" class="btn btn-ghost" data-i18n="featured.viewall">View all articles →</a>
+        </div>
+
+        <div class="featured-grid reveal-stagger" id="featuredGrid">
+          <!-- Skeleton loaders -->
+          <div class="skeleton skeleton-card" style="border-radius:16px; grid-row:span 2;"></div>
+          <div class="skeleton skeleton-card" style="border-radius:16px; height:200px;"></div>
+          <div class="skeleton skeleton-card" style="border-radius:16px; height:200px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-header reveal" style="text-align:center; max-width:560px; margin-inline:auto; margin-bottom:var(--space-2xl);">
+          <p class="overline section-label" data-i18n="cat.label">Browse by Topic</p>
+          <h2 class="section-title" data-i18n="cat.title">Five Worlds, One Ocean</h2>
+          <div class="section-divider" style="margin-inline:auto;"></div>
+        </div>
+
+        <div class="category-grid reveal-stagger">
+          <div class="category-card cat-marine" onclick="goCategory('marine-life')" role="button" tabindex="0">
+            <div class="category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9c0 0 1.5-2 6-2s6 2 6 2"/><path d="M3 13s1-1 3-1 3 1 3 1 1 1 3 1 3-1 3-1 1-1 3-1 3 1 3 1"/><path d="M21 9c-.5 2-2.5 5-9 5S3.5 11 3 9"/></svg>
+            </div>
+            <div class="category-name" data-i18n="cat.marine">Marine Life</div>
+            <div class="category-count">3 articles</div>
+          </div>
+
+          <div class="category-card cat-science" onclick="goCategory('ocean-science')" role="button" tabindex="0">
+            <div class="category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 9H8L9 3z"/><path d="M6 21h12"/><path d="M8 12c0 4 8 4 8 0"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+            </div>
+            <div class="category-name" data-i18n="cat.science">Ocean Science</div>
+            <div class="category-count">3 articles</div>
+          </div>
+
+          <div class="category-card cat-conservation" onclick="goCategory('conservation')" role="button" tabindex="0">
+            <div class="category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 6v6l4 2"/><path d="M2 12c0-1.85.5-3.58 1.38-5.06"/></svg>
+            </div>
+            <div class="category-name" data-i18n="cat.conservation">Conservation</div>
+            <div class="category-count">3 articles</div>
+          </div>
+
+          <div class="category-card cat-deepsea" onclick="goCategory('deep-sea')" role="button" tabindex="0">
+            <div class="category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="12" y1="8" x2="9" y2="11"/><line x1="12" y1="8" x2="15" y2="11"/></svg>
+            </div>
+            <div class="category-name" data-i18n="cat.deepsea">Deep Sea</div>
+            <div class="category-count">3 articles</div>
+          </div>
+
+          <div class="category-card cat-climate" onclick="goCategory('ocean-climate')" role="button" tabindex="0">
+            <div class="category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-.5A5.5 5.5 0 1 0 6 15.5"/><path d="M12 19v3M8 19l-2 3M16 19l2 3"/></svg>
+            </div>
+            <div class="category-name" data-i18n="cat.climate">Ocean & Climate</div>
+            <div class="category-count">3 articles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST ARTICLES ===== -->
+    <section class="section" id="latest">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="overline section-label" data-i18n="latest.label">Latest</p>
+            <h2 class="section-title" data-i18n="latest.title">Recent Discoveries</h2>
+            <div class="section-divider"></div>
+          </div>
+          <a href="articles.html" class="btn btn-ghost" data-i18n="latest.viewall">View all →</a>
+        </div>
+
+        <div class="articles-grid reveal-stagger" id="latestGrid">
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+          <div class="skeleton skeleton-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section newsletter-section">
+      <div class="container newsletter-inner">
+        <div class="newsletter-content reveal">
+          <p class="overline" style="color:rgba(255,255,255,0.45); margin-bottom:var(--space-sm);" data-i18n="newsletter.label">Stay Informed</p>
+          <h2 data-i18n="newsletter.title">Dive deeper,<br>every week.</h2>
+          <p style="margin-top:var(--space-md);" data-i18n="newsletter.desc">
+            Ocean science, conservation updates, and deep sea discoveries — delivered to your inbox. No spam, unsubscribe anytime.
+          </p>
+        </div>
+        <div class="newsletter-form reveal">
+          <div class="newsletter-input-group">
+            <input
+              type="email"
+              class="newsletter-input"
+              id="newsletterEmail"
+              placeholder="your@email.com"
+              data-i18n-placeholder="newsletter.placeholder"
+              aria-label="Email address"
+            />
+            <button class="btn btn-coral" onclick="subscribeNewsletter()" data-i18n="newsletter.btn">Subscribe</button>
+          </div>
+          <p class="newsletter-note" data-i18n="newsletter.note">
+            By subscribing, you agree to our Privacy Policy. We respect your inbox.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="flex gap-sm" style="align-items:center;">
+            <div class="nav-logo-mark">S</div>
+            <span class="footer-tagline">Synet</span>
+          </div>
+          <p data-i18n="footer.desc">
+            Science, Sea, and the Internet. A bilingual ocean science publication exploring the world's most vital and least understood ecosystem.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 7.2s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.8 4 12 4 12 4s-4.8 0-7 .3c-.4.1-1.3.1-2 .9-.6.6-.8 2-.8 2S2 8.7 2 10.3v1.4c0 1.5.2 3.1.2 3.1s.2 1.4.8 2c.7.8 1.7.7 2.2.8C6.7 17.8 12 18 12 18s4.8 0 7-.3c.4-.1 1.3-.1 2-.9.6-.6.8-2 .8-2s.2-1.5.2-3.1v-1.4c-.2-1.6-.4-3.1-.4-3.1zM9.7 14.3V9.1l5.5 2.6-5.5 2.6z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.explore">Explore</p>
+          <ul class="footer-links">
+            <li><a href="articles.html?cat=marine-life" class="footer-link" data-i18n="cat.marine">Marine Life</a></li>
+            <li><a href="articles.html?cat=ocean-science" class="footer-link" data-i18n="cat.science">Ocean Science</a></li>
+            <li><a href="articles.html?cat=conservation" class="footer-link" data-i18n="cat.conservation">Conservation</a></li>
+            <li><a href="articles.html?cat=deep-sea" class="footer-link" data-i18n="cat.deepsea">Deep Sea</a></li>
+            <li><a href="articles.html?cat=ocean-climate" class="footer-link" data-i18n="cat.climate">Ocean & Climate</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.synet">Synet</p>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="articles.html" class="footer-link" data-i18n="footer.allart">All Articles</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.legal">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.terms">Terms of Use</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.cookie">Cookie Policy</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.sources">Data Sources</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Synet. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link" data-i18n="footer.builtby">Built with curiosity & caffeine 🌊</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI CHAT WIDGET -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Ocean Chat" aria-expanded="false">
+    <svg class="chat-trigger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg class="chat-trigger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+
+  <div class="chat-bubble-hint" id="chatHint" aria-hidden="true" data-i18n="chat.hint">Ask me about the ocean 🌊</div>
+
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Ocean AI Chat" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-avatar">🌊</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name">Synet AI</div>
+        <div class="chat-header-status">
+          <span class="chat-status-dot"></span>
+          <span data-i18n="chat.status">Ocean expert, always online</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg-bot" id="welcomeMsg">
+        <span data-i18n="chat.welcome">Hi! I'm Synet AI 🌊 Ask me anything about oceans, marine life, or climate science.</span>
+      </div>
+    </div>
+
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s1">How deep is the ocean?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s2">What is bioluminescence?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s3">Why is the sea salty?</button>
+    </div>
+
+    <div class="chat-input-row">
+      <textarea
+        class="chat-input"
+        id="chatInput"
+        placeholder="Ask about the ocean..."
+        data-i18n-placeholder="chat.placeholder"
+        rows="1"
+        aria-label="Chat input"
+      ></textarea>
+      <button class="chat-send-btn" id="chatSendBtn" onclick="sendMessage()" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chat.js"></script>
+  <script>
+    // Load featured articles (3 featured)
+    async function loadFeatured() {
+      const lang = getLang();
+      try {
+        const res = await fetch(
+          `${SYNET_CONFIG.SUPABASE_URL}/rest/v1/articles?featured=eq.true&order=published_at.desc&limit=5`,
+          { headers: { apikey: SYNET_CONFIG.SUPABASE_ANON_KEY, 'Content-Type': 'application/json' } }
+        );
+        const articles = await res.json();
+        const grid = document.getElementById('featuredGrid');
+        if (!articles.length) { grid.innerHTML = '<p class="body-md" style="color:var(--text-muted);grid-column:1/-1;">No featured articles yet.</p>'; return; }
+
+        const [main, ...rest] = articles;
+        grid.innerHTML = `
+          ${articleCardFeatured(main, lang)}
+          ${rest.slice(0,2).map(a => articleCardSmall(a, lang)).join('')}
+        `;
+      } catch(e) {
+        document.getElementById('featuredGrid').innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;">Could not load articles. Check Supabase config.</p>';
+      }
+    }
+
+    // Load latest articles (6 most recent non-featured)
+    async function loadLatest() {
+      const lang = getLang();
+      try {
+        const res = await fetch(
+          `${SYNET_CONFIG.SUPABASE_URL}/rest/v1/articles?order=published_at.desc&limit=6`,
+          { headers: { apikey: SYNET_CONFIG.SUPABASE_ANON_KEY, 'Content-Type': 'application/json' } }
+        );
+        const articles = await res.json();
+        const grid = document.getElementById('latestGrid');
+        grid.innerHTML = articles.map(a => articleCardRegular(a, lang)).join('') || '<p style="color:var(--text-muted);grid-column:1/-1;">No articles found.</p>';
+      } catch(e) {
+        document.getElementById('latestGrid').innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;">Could not load articles.</p>';
+      }
+    }
+
+    function goCategory(slug) {
+      window.location.href = `articles.html?cat=${slug}`;
+    }
+
+    function subscribeNewsletter() {
+      const email = document.getElementById('newsletterEmail').value.trim();
+      if (!email || !email.includes('@')) { showToast('Please enter a valid email.', 'error'); return; }
+      showToast('Subscribed! Welcome to Synet 🌊', 'success');
+      document.getElementById('newsletterEmail').value = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFeatured();
+      loadLatest();
+    });
+  </script>
+</body>
+</html>
