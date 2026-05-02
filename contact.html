@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Synet — get in touch with our ocean science editorial team." />
+  <title>Contact — Synet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230b3d54'/><text y='.9em' font-size='70' x='12'>🌊</text></svg>" />
+</head>
+<body class="page-body">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">S</div>
+        <span class="nav-logo-text">Synet</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" onclick="setLang('en')" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="id" onclick="setLang('id')" aria-pressed="false">ID</button>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="mobileNav" aria-hidden="true">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- CONTACT HERO -->
+    <section style="background:var(--sand); padding-block:var(--space-4xl) var(--space-2xl);">
+      <div class="container">
+        <p class="overline section-label" data-i18n="contact.overline">Get in Touch</p>
+        <h1 class="display-md" style="color:var(--deep); margin-top:var(--space-sm); margin-bottom:var(--space-md);" data-i18n="contact.title">We'd love to hear<br>from you.</h1>
+        <p class="body-lg" style="color:var(--text-secondary); max-width:480px;" data-i18n="contact.subtitle">Whether you have a story tip, want to contribute, spotted an error, or just want to talk about the ocean — our inbox is open.</p>
+      </div>
+    </section>
+
+    <!-- WAVE -->
+    <div class="ocean-wave-divider" aria-hidden="true" style="background:var(--sand);">
+      <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--pearl)"/>
+      </svg>
+    </div>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Info -->
+          <div class="reveal">
+            <h2 data-i18n="contact.infotitle">Contact Information</h2>
+            <p data-i18n="contact.infodesc">We're a small editorial team passionate about ocean science. We try to respond to all messages within 2–3 business days.</p>
+
+            <div style="margin-top:var(--space-xl);">
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="overline" style="color:var(--text-muted); margin-bottom:2px;" data-i18n="contact.email">Email</div>
+                  <div>hello@synet.ocean</div>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="overline" style="color:var(--text-muted); margin-bottom:2px;" data-i18n="contact.location">Location</div>
+                  <div data-i18n="contact.locationval">Indonesia & Remote</div>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div class="overline" style="color:var(--text-muted); margin-bottom:2px;" data-i18n="contact.response">Response Time</div>
+                  <div data-i18n="contact.responseval">2–3 business days</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Topics -->
+            <div style="margin-top:var(--space-2xl); background:var(--teal-light); border-radius:var(--radius-lg); padding:var(--space-xl);">
+              <p class="overline" style="color:var(--teal); margin-bottom:var(--space-md);" data-i18n="contact.topicslabel">What we're happy to hear about</p>
+              <ul style="display:flex; flex-direction:column; gap:var(--space-sm);">
+                <li class="body-sm" style="display:flex; align-items:center; gap:var(--space-sm); color:var(--text-secondary);">
+                  <span style="color:var(--teal);">✓</span> <span data-i18n="contact.t1">Story tips & research you want covered</span>
+                </li>
+                <li class="body-sm" style="display:flex; align-items:center; gap:var(--space-sm); color:var(--text-secondary);">
+                  <span style="color:var(--teal);">✓</span> <span data-i18n="contact.t2">Corrections or factual feedback</span>
+                </li>
+                <li class="body-sm" style="display:flex; align-items:center; gap:var(--space-sm); color:var(--text-secondary);">
+                  <span style="color:var(--teal);">✓</span> <span data-i18n="contact.t3">Contributor pitches & collaborations</span>
+                </li>
+                <li class="body-sm" style="display:flex; align-items:center; gap:var(--space-sm); color:var(--text-secondary);">
+                  <span style="color:var(--teal);">✓</span> <span data-i18n="contact.t4">Partnership & sponsorship inquiries</span>
+                </li>
+                <li class="body-sm" style="display:flex; align-items:center; gap:var(--space-sm); color:var(--text-secondary);">
+                  <span style="color:var(--teal);">✓</span> <span data-i18n="contact.t5">Just want to talk about the ocean</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social -->
+            <div style="margin-top:var(--space-xl);">
+              <p class="overline" style="color:var(--text-muted); margin-bottom:var(--space-md);" data-i18n="contact.social">Follow Synet</p>
+              <div style="display:flex; gap:var(--space-sm);">
+                <a href="#" class="btn btn-ghost btn-sm" style="border:1.5px solid rgba(11,61,84,0.12);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  Twitter/X
+                </a>
+                <a href="#" class="btn btn-ghost btn-sm" style="border:1.5px solid rgba(11,61,84,0.12);">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form reveal" style="animation-delay:0.15s;">
+            <h3 style="font-family:var(--font-display); font-size:1.4rem; font-weight:600; color:var(--deep); margin-bottom:var(--space-xl);" data-i18n="contact.formtitle">Send us a message</h3>
+
+            <div class="grid-2" style="gap:var(--space-md);">
+              <div class="form-group">
+                <label class="form-label" for="contactName" data-i18n="contact.name">Full Name *</label>
+                <input type="text" id="contactName" class="form-input" data-i18n-placeholder="contact.nameph" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail" data-i18n="contact.emaill">Email *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="your@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject" data-i18n="contact.subject">Subject *</label>
+              <select id="contactSubject" class="form-select">
+                <option value="" data-i18n="contact.subjectph">Select a topic...</option>
+                <option value="story" data-i18n="contact.sub1">Story Tip</option>
+                <option value="correction" data-i18n="contact.sub2">Correction / Feedback</option>
+                <option value="contribute" data-i18n="contact.sub3">Contribute / Write for Us</option>
+                <option value="partnership" data-i18n="contact.sub4">Partnership / Sponsorship</option>
+                <option value="other" data-i18n="contact.sub5">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage" data-i18n="contact.message">Message *</label>
+              <textarea id="contactMessage" class="form-textarea" data-i18n-placeholder="contact.messageph" placeholder="Tell us what's on your mind..." rows="5" required></textarea>
+            </div>
+
+            <div class="form-group" style="flex-direction:row; align-items:center; gap:var(--space-sm);">
+              <input type="checkbox" id="contactConsent" style="width:18px; height:18px; accent-color:var(--teal); cursor:pointer;" />
+              <label for="contactConsent" class="body-sm" style="color:var(--text-secondary); cursor:pointer;" data-i18n="contact.consent">
+                I agree to Synet's Privacy Policy and consent to being contacted.
+              </label>
+            </div>
+
+            <button class="btn btn-primary" style="width:100%; margin-top:var(--space-sm);" onclick="submitForm()" data-i18n="contact.submit">
+              Send Message
+            </button>
+
+            <p class="body-sm" style="color:var(--text-muted); margin-top:var(--space-md); text-align:center;" data-i18n="contact.formfooter">
+              This is a demonstration form. In production, connect to a form backend like Netlify Forms or Formspree.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background:var(--sand);">
+      <div class="container" style="max-width:760px;">
+        <div style="text-align:center; margin-bottom:var(--space-2xl);" class="reveal">
+          <p class="overline section-label" data-i18n="contact.faqLabel">FAQ</p>
+          <h2 class="section-title" data-i18n="contact.faqTitle">Common Questions</h2>
+          <div class="section-divider" style="margin-inline:auto;"></div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-md);" class="reveal-stagger">
+          <details style="background:var(--white); border-radius:var(--radius-lg); overflow:hidden;">
+            <summary style="padding:var(--space-lg); font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-display);" data-i18n="contact.faq1q">
+              Can I write for Synet?
+              <span style="color:var(--teal); font-size:1.2rem;">+</span>
+            </summary>
+            <p style="padding:0 var(--space-lg) var(--space-lg); color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-i18n="contact.faq1a">Yes! We're always open to pitches from writers with a background in marine science, environmental journalism, or ocean-adjacent fields. Send us a brief pitch via the contact form above — include your topic idea, angle, and a writing sample.</p>
+          </details>
+
+          <details style="background:var(--white); border-radius:var(--radius-lg); overflow:hidden;">
+            <summary style="padding:var(--space-lg); font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-display);" data-i18n="contact.faq2q">
+              How is Synet funded?
+              <span style="color:var(--teal); font-size:1.2rem;">+</span>
+            </summary>
+            <p style="padding:0 var(--space-lg) var(--space-lg); color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-i18n="contact.faq2a">Synet is currently self-funded and independent. All content is free to read. We may explore reader support and ethical sponsorships in the future, but our editorial independence is non-negotiable.</p>
+          </details>
+
+          <details style="background:var(--white); border-radius:var(--radius-lg); overflow:hidden;">
+            <summary style="padding:var(--space-lg); font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-display);" data-i18n="contact.faq3q">
+              I found a factual error. What should I do?
+              <span style="color:var(--teal); font-size:1.2rem;">+</span>
+            </summary>
+            <p style="padding:0 var(--space-lg) var(--space-lg); color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-i18n="contact.faq3a">Please tell us immediately — accuracy is our top priority. Use the contact form, select "Correction / Feedback," and include the article title and the specific claim you believe is incorrect. We'll investigate and correct promptly with a transparent editor's note.</p>
+          </details>
+
+          <details style="background:var(--white); border-radius:var(--radius-lg); overflow:hidden;">
+            <summary style="padding:var(--space-lg); font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-display);" data-i18n="contact.faq4q">
+              Can I republish Synet content?
+              <span style="color:var(--teal); font-size:1.2rem;">+</span>
+            </summary>
+            <p style="padding:0 var(--space-lg) var(--space-lg); color:var(--text-secondary); font-size:0.9rem; line-height:1.7;" data-i18n="contact.faq4a">All Synet content is protected by copyright. Republication requires written permission. Educational, non-commercial use with proper attribution may be permitted — contact us to discuss.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="flex gap-sm" style="align-items:center;">
+            <div class="nav-logo-mark">S</div>
+            <span class="footer-tagline">Synet</span>
+          </div>
+          <p data-i18n="footer.desc">Science, Sea, and the Internet. A bilingual ocean science publication.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter/X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.explore">Explore</p>
+          <ul class="footer-links">
+            <li><a href="articles.html?cat=marine-life" class="footer-link" data-i18n="cat.marine">Marine Life</a></li>
+            <li><a href="articles.html?cat=ocean-science" class="footer-link" data-i18n="cat.science">Ocean Science</a></li>
+            <li><a href="articles.html?cat=conservation" class="footer-link" data-i18n="cat.conservation">Conservation</a></li>
+            <li><a href="articles.html?cat=deep-sea" class="footer-link" data-i18n="cat.deepsea">Deep Sea</a></li>
+            <li><a href="articles.html?cat=ocean-climate" class="footer-link" data-i18n="cat.climate">Ocean & Climate</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.synet">Synet</p>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.legal">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Synet. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <a href="#" class="footer-bottom-link" data-i18n="footer.builtby">Built with curiosity & caffeine 🌊</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI CHAT -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Ocean Chat" aria-expanded="false">
+    <svg class="chat-trigger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg class="chat-trigger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Ocean AI Chat" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-avatar">🌊</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name">Synet AI</div>
+        <div class="chat-header-status"><span class="chat-status-dot"></span><span data-i18n="chat.status">Ocean expert, always online</span></div>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg-bot"><span data-i18n="chat.welcome">Hi! I'm Synet AI 🌊 Ask me anything about oceans, marine life, or climate science.</span></div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s1">How deep is the ocean?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s2">What is bioluminescence?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s3">Why is the sea salty?</button>
+    </div>
+    <div class="chat-input-row">
+      <textarea class="chat-input" id="chatInput" placeholder="Ask about the ocean..." rows="1" aria-label="Chat input"></textarea>
+      <button class="chat-send-btn" id="chatSendBtn" onclick="sendMessage()" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chat.js"></script>
+  <script>
+    function submitForm() {
+      const name    = document.getElementById('contactName').value.trim();
+      const email   = document.getElementById('contactEmail').value.trim();
+      const subject = document.getElementById('contactSubject').value;
+      const message = document.getElementById('contactMessage').value.trim();
+      const consent = document.getElementById('contactConsent').checked;
+
+      if (!name || !email || !subject || !message) {
+        showToast('Please fill in all required fields.', 'error'); return;
+      }
+      if (!email.includes('@')) {
+        showToast('Please enter a valid email address.', 'error'); return;
+      }
+      if (!consent) {
+        showToast('Please agree to the Privacy Policy to continue.', 'error'); return;
+      }
+
+      // Simulate submission
+      showToast('Message sent! We\'ll get back to you soon 🌊', 'success');
+      document.getElementById('contactName').value    = '';
+      document.getElementById('contactEmail').value   = '';
+      document.getElementById('contactSubject').value = '';
+      document.getElementById('contactMessage').value = '';
+      document.getElementById('contactConsent').checked = false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Synet — a bilingual ocean science blog dedicated to making marine research accessible to everyone." />
+  <title>About — Synet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230b3d54'/><text y='.9em' font-size='70' x='12'>🌊</text></svg>" />
+</head>
+<body class="page-body">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">S</div>
+        <span class="nav-logo-text">Synet</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+        <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" onclick="setLang('en')" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="id" onclick="setLang('id')" aria-pressed="false">ID</button>
+        </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="mobileNav" aria-hidden="true">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="articles.html" class="nav-link" data-i18n="nav.articles">Articles</a>
+    <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="container" style="position:relative; z-index:1;">
+        <p class="overline" style="color:rgba(255,255,255,0.45); margin-bottom:var(--space-md);" data-i18n="about.overline">Our Story</p>
+        <h1 data-i18n="about.title">Where Science<br>Meets the Sea</h1>
+        <p data-i18n="about.subtitle">
+          Synet is a bilingual ocean science publication born from a simple belief: the ocean is the most important thing on Earth, and most people know almost nothing about it.
+        </p>
+      </div>
+
+      <!-- Decorative ocean circles -->
+      <div aria-hidden="true" style="position:absolute; top:20%; right:8%; width:300px; height:300px; border-radius:50%; border:1px solid rgba(255,255,255,0.06); pointer-events:none;"></div>
+      <div aria-hidden="true" style="position:absolute; top:15%; right:5%; width:480px; height:480px; border-radius:50%; border:1px solid rgba(255,255,255,0.03); pointer-events:none;"></div>
+    </section>
+
+    <!-- WAVE DOWN -->
+    <div class="ocean-wave-divider" aria-hidden="true" style="background:var(--deep);">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,20 C360,60 720,0 1080,30 C1260,45 1380,20 1440,20 L1440,60 L0,60 Z" fill="var(--pearl)"/>
+      </svg>
+    </div>
+
+    <!-- MISSION -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width:680px; margin:0 auto var(--space-3xl); text-align:center;" class="reveal">
+          <p class="overline section-label" data-i18n="about.missionlabel">Our Mission</p>
+          <h2 class="section-title" style="margin-bottom:var(--space-lg);" data-i18n="about.missiontitle">Why Synet Exists</h2>
+          <p class="body-lg" style="color:var(--text-secondary);" data-i18n="about.missiondesc">
+            The ocean covers 71% of our planet, produces half our oxygen, absorbs a third of our carbon, and feeds billions of people. Yet ocean literacy remains dangerously low. Synet bridges the gap between peer-reviewed science and public understanding — in two languages.
+          </p>
+        </div>
+
+        <div class="mission-grid reveal-stagger">
+          <div class="mission-card">
+            <div class="mission-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 data-i18n="about.m1title">Science, Translated</h3>
+            <p data-i18n="about.m1desc">We take complex peer-reviewed research and translate it into readable, accurate stories — without dumbing it down. Ocean science deserves serious treatment and wide reach.</p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 data-i18n="about.m2title">Bilingual by Design</h3>
+            <p data-i18n="about.m2desc">Every article on Synet is fully available in both Indonesian and English. Ocean science shouldn't have a language barrier — especially for the country with the world's longest coastline.</p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="about.m3title">Conservation-Driven</h3>
+            <p data-i18n="about.m3desc">We believe that understanding the ocean is the first step to protecting it. Every story we publish is chosen for its relevance to ocean health and its power to change how readers see our blue planet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="section" style="background:var(--sand);">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+          <p class="overline section-label" data-i18n="about.numberlabel">By the Numbers</p>
+          <h2 class="section-title" data-i18n="about.numbertitle">Synet at a Glance</h2>
+          <div class="section-divider" style="margin-inline:auto;"></div>
+        </div>
+
+        <div class="grid-4 reveal-stagger">
+          <div style="text-align:center; background:var(--white); border-radius:var(--radius-lg); padding:var(--space-xl);">
+            <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--teal); line-height:1;">15</div>
+            <div class="body-sm" style="color:var(--text-secondary); margin-top:var(--space-sm);" data-i18n="about.n1">Original articles</div>
+          </div>
+          <div style="text-align:center; background:var(--white); border-radius:var(--radius-lg); padding:var(--space-xl);">
+            <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--coral); line-height:1;">2</div>
+            <div class="body-sm" style="color:var(--text-secondary); margin-top:var(--space-sm);" data-i18n="about.n2">Languages (EN + ID)</div>
+          </div>
+          <div style="text-align:center; background:var(--white); border-radius:var(--radius-lg); padding:var(--space-xl);">
+            <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--gold); line-height:1;">5</div>
+            <div class="body-sm" style="color:var(--text-secondary); margin-top:var(--space-sm);" data-i18n="about.n3">Ocean topics covered</div>
+          </div>
+          <div style="text-align:center; background:var(--white); border-radius:var(--radius-lg); padding:var(--space-xl);">
+            <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--deep); line-height:1;">∞</div>
+            <div class="body-sm" style="color:var(--text-secondary); margin-top:var(--space-sm);" data-i18n="about.n4">Ocean left to explore</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+          <p class="overline section-label" data-i18n="about.teamlabel">The Team</p>
+          <h2 class="section-title" data-i18n="about.teamtitle">Who's Behind Synet</h2>
+          <div class="section-divider" style="margin-inline:auto;"></div>
+        </div>
+
+        <div class="team-grid reveal-stagger">
+          <div class="team-card">
+            <div class="team-avatar" style="background:var(--deep); display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-display); font-size:1.5rem;">M</div>
+            <div class="team-name">Maya Oceanides</div>
+            <div class="team-role" data-i18n="about.role.editor">Editor in Chief</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:var(--teal); display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-display); font-size:1.5rem;">R</div>
+            <div class="team-name">Raka Samudra</div>
+            <div class="team-role" data-i18n="about.role.science">Science Writer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:var(--coral); display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-display); font-size:1.5rem;">L</div>
+            <div class="team-name">Layla Benthic</div>
+            <div class="team-role" data-i18n="about.role.conservation">Conservation Editor</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background:var(--gold); display:flex; align-items:center; justify-content:center; color:white; font-family:var(--font-display); font-size:1.5rem;">D</div>
+            <div class="team-name">Dian Pelagic</div>
+            <div class="team-role" data-i18n="about.role.design">Design & Technology</div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:var(--space-2xl);" class="reveal">
+          <p class="body-md" style="color:var(--text-muted); margin-bottom:var(--space-lg);" data-i18n="about.jointeam">Passionate about oceans? We're always looking for contributors.</p>
+          <a href="contact.html" class="btn btn-primary" data-i18n="about.joincta">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section" style="background:var(--deep);">
+      <div class="container">
+        <div style="text-align:center; margin-bottom:var(--space-3xl);" class="reveal">
+          <p class="overline" style="color:rgba(255,255,255,0.4); margin-bottom:var(--space-sm);" data-i18n="about.valueslabel">What We Stand For</p>
+          <h2 style="font-family:var(--font-display); font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:300; color:var(--white); letter-spacing:-0.02em;" data-i18n="about.valuestitle">Our Editorial Principles</h2>
+        </div>
+
+        <div class="grid-3 reveal-stagger">
+          <div style="padding:var(--space-xl); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-lg);">
+            <div style="font-family:var(--font-display); font-size:2rem; color:var(--teal); margin-bottom:var(--space-md);">01</div>
+            <h3 style="color:var(--white); margin-bottom:var(--space-sm); font-size:1.1rem;" data-i18n="about.v1title">Accuracy First</h3>
+            <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; line-height:1.7;" data-i18n="about.v1desc">Every claim is sourced to peer-reviewed research or established scientific institutions. We correct errors promptly and transparently.</p>
+          </div>
+          <div style="padding:var(--space-xl); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-lg);">
+            <div style="font-family:var(--font-display); font-size:2rem; color:var(--coral); margin-bottom:var(--space-md);">02</div>
+            <h3 style="color:var(--white); margin-bottom:var(--space-sm); font-size:1.1rem;" data-i18n="about.v2title">No Sensationalism</h3>
+            <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; line-height:1.7;" data-i18n="about.v2desc">The ocean is extraordinary enough without exaggeration. We present facts clearly and let the science speak — even when it's complicated or uncomfortable.</p>
+          </div>
+          <div style="padding:var(--space-xl); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-lg);">
+            <div style="font-family:var(--font-display); font-size:2rem; color:var(--gold); margin-bottom:var(--space-md);">03</div>
+            <h3 style="color:var(--white); margin-bottom:var(--space-sm); font-size:1.1rem;" data-i18n="about.v3title">Open & Free</h3>
+            <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; line-height:1.7;" data-i18n="about.v3desc">All Synet content is free to read, forever. Knowledge about our shared ocean should not sit behind a paywall.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="text-align:center;">
+      <div class="container" style="max-width:560px;" class="reveal">
+        <p class="overline section-label" data-i18n="about.ctalabel">Ready to dive in?</p>
+        <h2 class="section-title" style="margin-bottom:var(--space-lg);" data-i18n="about.ctatitle">Start Exploring</h2>
+        <p class="body-lg" style="color:var(--text-secondary); margin-bottom:var(--space-2xl);" data-i18n="about.ctadesc">15 articles across 5 ocean topics, fully bilingual. More coming every week.</p>
+        <div style="display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap;">
+          <a href="articles.html" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Explore Articles</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" data-i18n="nav.contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="flex gap-sm" style="align-items:center;">
+            <div class="nav-logo-mark">S</div>
+            <span class="footer-tagline">Synet</span>
+          </div>
+          <p data-i18n="footer.desc">Science, Sea, and the Internet. A bilingual ocean science publication.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter/X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.explore">Explore</p>
+          <ul class="footer-links">
+            <li><a href="articles.html?cat=marine-life" class="footer-link" data-i18n="cat.marine">Marine Life</a></li>
+            <li><a href="articles.html?cat=ocean-science" class="footer-link" data-i18n="cat.science">Ocean Science</a></li>
+            <li><a href="articles.html?cat=conservation" class="footer-link" data-i18n="cat.conservation">Conservation</a></li>
+            <li><a href="articles.html?cat=deep-sea" class="footer-link" data-i18n="cat.deepsea">Deep Sea</a></li>
+            <li><a href="articles.html?cat=ocean-climate" class="footer-link" data-i18n="cat.climate">Ocean & Climate</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.synet">Synet</p>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="articles.html" class="footer-link" data-i18n="footer.allart">All Articles</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.col.legal">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Synet. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <a href="#" class="footer-bottom-link" data-i18n="footer.builtby">Built with curiosity & caffeine 🌊</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI CHAT -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Ocean Chat" aria-expanded="false">
+    <svg class="chat-trigger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg class="chat-trigger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Ocean AI Chat" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-avatar">🌊</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name">Synet AI</div>
+        <div class="chat-header-status"><span class="chat-status-dot"></span><span data-i18n="chat.status">Ocean expert, always online</span></div>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg chat-msg-bot"><span data-i18n="chat.welcome">Hi! I'm Synet AI 🌊 Ask me anything about oceans, marine life, or climate science.</span></div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s1">How deep is the ocean?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s2">What is bioluminescence?</button>
+      <button class="chat-suggestion" onclick="sendSuggestion(this)" data-i18n="chat.s3">Why is the sea salty?</button>
+    </div>
+    <div class="chat-input-row">
+      <textarea class="chat-input" id="chatInput" placeholder="Ask about the ocean..." rows="1" aria-label="Chat input"></textarea>
+      <button class="chat-send-btn" id="chatSendBtn" onclick="sendMessage()" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
