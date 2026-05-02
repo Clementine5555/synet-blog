@@ -1,0 +1,94 @@
+SYNET — Web Blog Build Progress Log
+=====================================
+Project: Synet (Science + Sea + Internet) — Ocean Blog
+Stack: HTML/CSS/JS + Supabase + Netlify Functions + Anthropic API
+Date: May 2026
+Owner: Cerulean
+
+DESIGN DECISIONS
+-----------------
+Aesthetic: Editorial Ocean Science Journal
+  - Fonts: Fraunces (display serif, wavy/optical - thematically perfect) + Outfit (clean geometric sans)
+  - Colors: --deep #0b3d54 | --teal #1e8a8f | --coral #dc6b42 | --sand #f5efe6 | --pearl #fafaf8
+  - Accent gold: #c9a227 (sandy gold)
+  - Style: Airy editorial, generous whitespace, subtle ocean-inspired SVG motifs
+Language: Bilingual (Indonesian / English) via data-i18n + localStorage
+
+DB SCHEMA (Supabase / PostgreSQL)
+----------------------------------
+- categories (id, slug, name_en, name_id, description_en, description_id, icon, color)
+- articles (id, slug, category_slug, title_en, title_id, excerpt_en, excerpt_id,
+            content_en, content_id, author_name, cover_image, read_time, featured,
+            published_at, created_at)
+
+CATEGORIES (5)
+---------------
+1. marine-life       | Marine Life / Kehidupan Laut
+2. ocean-science     | Ocean Science / Sains Samudra
+3. conservation      | Conservation / Konservasi
+4. deep-sea          | Deep Sea Exploration / Eksplorasi Laut Dalam
+5. ocean-climate     | Ocean & Climate / Laut & Iklim
+
+ARTICLES (15, 3 per category)
+-------------------------------
+Marine Life:
+  [x] the-secret-language-of-dolphins
+  [x] coral-reefs-cities-under-the-sea
+  [x] whale-migration-patterns
+
+Ocean Science:
+  [x] bioluminescence-when-the-sea-glows
+  [x] understanding-ocean-currents
+  [x] ocean-salinity-explained
+
+Conservation:
+  [x] the-plastic-tide
+  [x] marine-protected-areas-explained
+  [x] restoring-mangrove-forests
+
+Deep Sea Exploration:
+  [x] life-in-the-hadal-zone
+  [x] deep-sea-mining-debate
+  [x] rovs-eyes-in-the-abyss
+
+Ocean & Climate:
+  [x] ocean-acidification
+  [x] ocean-as-earths-thermostat
+  [x] rising-seas-what-the-data-shows
+
+FILES CHECKLIST
+----------------
+[x] schema.sql              — DB schema + 15 bilingual articles seed data
+[x] config.js               — API keys placeholder
+[x] css/style.css           — Full stylesheet (editorial ocean theme)
+[x] index.html              — Homepage: hero, featured, categories, newsletter
+[x] articles.html           — Article listing + search + category filter
+[x] article.html            — Single article reader
+[x] about.html              — About Synet
+[x] contact.html            — Contact form (static)
+[x] js/app.js               — Shared JS: lang switch, nav, Supabase client
+[x] js/chat.js              — AI chat widget (ocean Q&A)
+[x] netlify/functions/ocean-ai.js  — Serverless proxy for Anthropic API
+[x] netlify.toml            — Netlify config
+[x] DEPLOY.md               — Step-by-step setup guide
+
+NEXT SESSION NOTES
+-------------------
+- If returning to this project, all source is at /mnt/user-data/outputs/synet/
+- To change Supabase keys: edit config.js (SUPABASE_URL and SUPABASE_ANON_KEY)
+- To change AI behavior: edit netlify/functions/ocean-ai.js system prompt
+- To add articles: use Supabase dashboard → articles table → insert row
+- Language toggle: localStorage key = 'synet-lang', values = 'en' | 'id'
+
+FASE 2 COMPLETE
+----------------
+[x] js/config.js   — API keys placeholder, site info, pagination settings
+[x] css/style.css  — Full stylesheet (~780 lines): editorial ocean theme
+  - Fonts: Fraunces (display) + Outfit (body) via Google Fonts
+  - Colors: --deep #0b3d54, --teal #1e8a8f, --coral #dc6b42, --sand #f5efe6
+  - Components: nav, hero, cards, categories, chat widget, footer, forms
+  - Animations: fadeUp, shimmer, scroll-reveal, stagger, typing
+  - Responsive: 1024px tablet + 640px mobile breakpoints
+  - a11y: skip-link, focus states, reduced-motion, WCAG contrast
+
+NEXT: FASE 3 — index.html + articles.html
