@@ -5,8 +5,8 @@
 
 const SYNET_CONFIG = {
   // Supabase — dari: https://supabase.com → project → Settings → API
-  SUPABASE_URL:      "YOUR_SUPABASE_URL",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  SUPABASE_URL:      "https://yvwlmvkkrxoblofdvgkd.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl2d2xtdmtrcnhvYmxvZmR2Z2tkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3ODY2OTEsImV4cCI6MjA5MzM2MjY5MX0.cs9O3bBUiUY-ULedwIg68wHuLcLJ8jxLXoIuQRfhBuU",
 
   // Anthropic — dari: https://console.anthropic.com → API Keys
   // PENTING: ini untuk Netlify Function, bukan langsung di frontend
