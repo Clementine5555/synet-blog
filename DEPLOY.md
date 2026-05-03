@@ -68,13 +68,13 @@ Netlify otomatis deploy ulang setiap kali ada push ke GitHub.
 
 ---
 
-## 3. Aktifkan AI Chat
+## 3. Aktifkan AI Chat (Groq — Gratis)
 
 ### Buat Anthropic API Key
-1. Buka [console.anthropic.com](https://console.anthropic.com)
+1. Buka [console.groq.com](https://console.groq.com)
 2. Login / daftar akun
 3. Sidebar → **API Keys** → **Create Key**
-4. Beri nama: `synet-production`
+4. Klik **Create API Key** → beri nama: `synet-production`
 5. Copy key-nya (hanya ditampilkan sekali!)
 
 ### Set di Netlify (JANGAN di config.js)
@@ -83,7 +83,7 @@ API key TIDAK boleh di-hardcode di frontend. Set sebagai environment variable:
 1. Di Netlify dashboard → pilih site Synet
 2. **Site configuration** → **Environment variables**
 3. Klik **Add a variable**
-4. Key: `ANTHROPIC_API_KEY`
+4. Key: `GROQ_API_KEY`
 5. Value: paste API key dari Anthropic
 6. Klik **Save**
 7. **Redeploy site** (Deploys → Trigger deploy → Deploy site)
@@ -148,7 +148,7 @@ Tidak perlu coding — semua lewat Supabase dashboard:
 - Pastikan schema SQL sudah dijalankan (tabel `articles` dan `categories` ada)
 
 ### AI Chat tidak merespons
-- Pastikan `ANTHROPIC_API_KEY` sudah diset di Netlify environment variables
+- Pastikan `GROQ_API_KEY` sudah diset di Netlify environment variables
 - Pastikan site sudah di-redeploy setelah set env var
 - Buka DevTools → Network → cek response dari `/.netlify/functions/ocean-ai`
 

@@ -391,7 +391,7 @@ function articleCardRegular(a, lang) {
   return `
     <article class="card" onclick="window.location.href='article.html?slug=${a.slug}'" role="link" tabindex="0" aria-label="${title}">
       <div class="card-img-wrap">
-        <img src="${a.cover_image || 'https://picsum.photos/seed/' + a.slug + '/800/500'}" alt="${title}" loading="lazy" />
+        <img src="${a.cover_image || 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&q=80'}" alt="${title}" loading="lazy" />
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -427,7 +427,7 @@ function articleCardFeatured(a, lang) {
   return `
     <article class="card featured-main" onclick="window.location.href='article.html?slug=${a.slug}'" role="link" tabindex="0" aria-label="${title}" style="grid-row:span 2;">
       <div class="card-img-wrap" style="aspect-ratio:unset; min-height:280px;">
-        <img src="${a.cover_image || 'https://picsum.photos/seed/' + a.slug + '/800/500'}" alt="${title}" loading="lazy" />
+        <img src="${a.cover_image || 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&q=80'}" alt="${title}" loading="lazy" />
       </div>
       <div class="card-body" style="padding:var(--space-xl); gap:var(--space-md);">
         <div class="card-meta">
@@ -460,19 +460,24 @@ function articleCardSmall(a, lang) {
   const badge   = getCatBadge(a.category_slug);
   const catName = getCatName(a.category_slug, lang);
   const readLabel = lang === 'id' ? 'menit baca' : 'min read';
+  const readMore  = lang === 'id' ? 'Baca selengkapnya' : 'Continue reading';
 
   return `
-    <article class="card" onclick="window.location.href='article.html?slug=${a.slug}'" role="link" tabindex="0" aria-label="${title}" style="display:grid; grid-template-columns:120px 1fr; min-height:auto;">
-      <div class="card-img-wrap" style="aspect-ratio:unset;">
-        <img src="${a.cover_image || 'https://picsum.photos/seed/' + a.slug + '/800/500'}" alt="${title}" loading="lazy" />
+    <article class="card" onclick="window.location.href='article.html?slug=${a.slug}'" role="link" tabindex="0" aria-label="${title}">
+      <div class="card-img-wrap" style="aspect-ratio:16/9;">
+        <img src="${a.cover_image}" alt="${title}" loading="lazy" />
       </div>
-      <div class="card-body" style="padding:var(--space-md);">
-        <span class="badge ${badge}" style="font-size:0.65rem;">${catName}</span>
-        <h3 class="card-title" style="font-size:1rem; margin-top:var(--space-xs);">${title}</h3>
-        <span class="card-read-time" style="margin-top:auto; font-size:0.72rem;">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          ${a.read_time} ${readLabel}
-        </span>
+      <div class="card-body" style="padding:var(--space-lg); gap:var(--space-sm);">
+        <div class="card-meta">
+          <span class="badge ${badge}">${catName}</span>
+          <span class="caption" style="color:var(--text-muted);">${a.read_time} ${readLabel}</span>
+        </div>
+        <h3 class="card-title" style="font-size:1.05rem; line-height:1.35;">${title}</h3>
+        <p class="card-excerpt" style="-webkit-line-clamp:2; font-size:0.82rem;">${excerpt}</p>
+        <div style="margin-top:var(--space-sm); display:flex; align-items:center; gap:6px; font-size:0.8rem; font-weight:600; color:var(--teal);">
+          ${readMore}
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
       </div>
     </article>`;
 }
