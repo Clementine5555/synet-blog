@@ -68,18 +68,58 @@
     </div>
 
     <!-- MISSION -->
-    <section class="section">
+    <section class="section" style="overflow:hidden;">
       <div class="container">
-        <div style="max-width:680px; margin:0 auto var(--space-3xl); text-align:center;" class="reveal">
-          <p class="overline section-label" data-i18n="about.missionlabel">Our Mission</p>
-          <h2 class="section-title" style="margin-bottom:var(--space-lg);" data-i18n="about.missiontitle">Why Synet Exists</h2>
-          <p class="body-lg" style="color:var(--text-secondary);" data-i18n="about.missiondesc">
-            The ocean covers 71% of our planet, produces half our oxygen, absorbs a third of our carbon, and feeds billions of people. Yet ocean literacy remains dangerously low. Synet bridges the gap between peer-reviewed science and public understanding — in two languages.
-          </p>
+
+        <!-- Big stat decorations (background) -->
+        <div aria-hidden="true" style="position:relative;">
+          <div style="position:absolute; top:-40px; left:-60px; font-family:var(--font-display); font-size:clamp(120px,18vw,220px); font-weight:700; color:var(--teal); opacity:0.04; line-height:1; pointer-events:none; user-select:none; z-index:0;">71%</div>
+          <div style="position:absolute; top:60px; right:-40px; font-family:var(--font-display); font-size:clamp(80px,12vw,160px); font-weight:700; color:var(--coral); opacity:0.04; line-height:1; pointer-events:none; user-select:none; z-index:0;">50%</div>
         </div>
 
+        <!-- Split layout: left text + right stats -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4xl); align-items:center; margin-bottom:var(--space-4xl); position:relative; z-index:1;" class="reveal">
+          <div>
+            <p class="overline section-label" data-i18n="about.missionlabel">Our Mission</p>
+            <h2 class="section-title" style="margin-bottom:var(--space-lg);" data-i18n="about.missiontitle">Why Synet Exists</h2>
+            <div class="section-divider"></div>
+            <p class="body-lg" style="color:var(--text-secondary); margin-top:var(--space-lg); line-height:1.8;" data-i18n="about.missiondesc">
+              The ocean covers 71% of our planet, produces half our oxygen, absorbs a third of our carbon, and feeds billions of people. Yet ocean literacy remains dangerously low. Synet bridges the gap between peer-reviewed science and public understanding — in two languages.
+            </p>
+          </div>
+
+          <!-- Right: ocean stats visual -->
+          <div style="display:flex; flex-direction:column; gap:var(--space-md);">
+            <div style="background:var(--deep); border-radius:var(--radius-xl); padding:var(--space-xl); display:flex; align-items:center; gap:var(--space-lg);">
+              <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--gold); line-height:1; flex-shrink:0;">71%</div>
+              <div>
+                <div style="font-weight:600; color:var(--white); margin-bottom:4px;" data-i18n="about.stat1title">of Earth's surface</div>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.5); line-height:1.5;" data-i18n="about.stat1desc">covered by ocean — yet most of it remains unexplored and misunderstood.</div>
+              </div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md);">
+              <div style="background:var(--teal-light); border-radius:var(--radius-lg); padding:var(--space-lg); border-left:3px solid var(--teal);">
+                <div style="font-family:var(--font-display); font-size:2.2rem; font-weight:300; color:var(--teal); line-height:1;">50%</div>
+                <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:var(--space-xs); line-height:1.5;" data-i18n="about.stat2">of Earth's oxygen comes from the ocean</div>
+              </div>
+              <div style="background:var(--coral-light); border-radius:var(--radius-lg); padding:var(--space-lg); border-left:3px solid var(--coral);">
+                <div style="font-family:var(--font-display); font-size:2.2rem; font-weight:300; color:var(--coral); line-height:1;">80%</div>
+                <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:var(--space-xs); line-height:1.5;" data-i18n="about.stat3">still unexplored by modern science</div>
+              </div>
+            </div>
+            <div style="background:var(--sand); border-radius:var(--radius-lg); padding:var(--space-lg); display:flex; align-items:center; gap:var(--space-md);">
+              <div style="width:44px; height:44px; background:var(--white); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;" data-i18n="about.statquote">"The ocean is the lifeblood of our planet. Understanding it is understanding ourselves."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission cards -->
         <div class="mission-grid reveal-stagger">
-          <div class="mission-card">
+          <div class="mission-card" style="position:relative; overflow:hidden;">
+            <div style="position:absolute; top:-20px; right:-10px; font-family:var(--font-display); font-size:5rem; font-weight:700; color:var(--teal); opacity:0.06; line-height:1; pointer-events:none;">01</div>
             <div class="mission-card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
             </div>
@@ -87,7 +127,8 @@
             <p data-i18n="about.m1desc">We take complex peer-reviewed research and translate it into readable, accurate stories — without dumbing it down. Ocean science deserves serious treatment and wide reach.</p>
           </div>
 
-          <div class="mission-card">
+          <div class="mission-card" style="position:relative; overflow:hidden;">
+            <div style="position:absolute; top:-20px; right:-10px; font-family:var(--font-display); font-size:5rem; font-weight:700; color:var(--teal); opacity:0.06; line-height:1; pointer-events:none;">02</div>
             <div class="mission-card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
@@ -95,7 +136,8 @@
             <p data-i18n="about.m2desc">Every article on Synet is fully available in both Indonesian and English. Ocean science shouldn't have a language barrier — especially for the country with the world's longest coastline.</p>
           </div>
 
-          <div class="mission-card">
+          <div class="mission-card" style="position:relative; overflow:hidden;">
+            <div style="position:absolute; top:-20px; right:-10px; font-family:var(--font-display); font-size:5rem; font-weight:700; color:var(--teal); opacity:0.06; line-height:1; pointer-events:none;">03</div>
             <div class="mission-card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>

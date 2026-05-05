@@ -56,7 +56,9 @@ const TRANSLATIONS = {
     // About page
     'about.overline': 'Our Story', 'about.title': 'Where Science\nMeets the Sea',
     'about.subtitle': 'Synet is a bilingual ocean science publication born from a simple belief: the ocean is the most important thing on Earth, and most people know almost nothing about it.',
-    'about.missionlabel': 'Our Mission', 'about.missiontitle': 'Why Synet Exists',
+    'about.stat1title': "of Earth's surface", 'about.stat1desc': "covered by ocean — yet most of it remains unexplored and misunderstood.",
+    'about.stat2': "of Earth's oxygen comes from the ocean", 'about.stat3': "still unexplored by modern science",
+    'about.statquote': '"The ocean is the lifeblood of our planet. Understanding it is understanding ourselves."',
     'about.missiondesc': "The ocean covers 71% of our planet, produces half our oxygen, absorbs a third of our carbon, and feeds billions of people. Yet ocean literacy remains dangerously low. Synet bridges the gap between peer-reviewed science and public understanding — in two languages.",
     'about.m1title': 'Science, Translated', 'about.m1desc': 'We take complex peer-reviewed research and translate it into readable, accurate stories — without dumbing it down.',
     'about.m2title': 'Bilingual by Design', 'about.m2desc': "Every article on Synet is fully available in both Indonesian and English.",
@@ -169,7 +171,9 @@ const TRANSLATIONS = {
     // About
     'about.overline': 'Kisah Kami', 'about.title': 'Di Mana Sains\nBertemu Laut',
     'about.subtitle': 'Synet adalah publikasi sains kelautan bilingual yang lahir dari keyakinan sederhana: laut adalah hal terpenting di Bumi, dan kebanyakan orang hampir tidak tahu apa-apa tentangnya.',
-    'about.missionlabel': 'Misi Kami', 'about.missiontitle': 'Mengapa Synet Ada',
+    'about.stat1title': "permukaan Bumi", 'about.stat1desc': "ditutupi lautan — namun sebagian besar masih belum dieksplorasi dan dipahami.",
+    'about.stat2': "oksigen Bumi berasal dari lautan", 'about.stat3': "masih belum dieksplorasi sains modern",
+    'about.statquote': '"Lautan adalah darah kehidupan planet kita. Memahaminya berarti memahami diri kita sendiri."',
     'about.missiondesc': 'Lautan menutupi 71% planet kita, menghasilkan setengah oksigen kita, menyerap sepertiga karbon kita, dan memberi makan miliaran orang. Namun kesadaran tentang laut masih sangat rendah. Synet menjembatani kesenjangan antara riset ilmiah dan pemahaman publik — dalam dua bahasa.',
     'about.m1title': 'Sains, Diterjemahkan', 'about.m1desc': 'Kami mengambil riset ilmiah yang kompleks dan menerjemahkannya menjadi cerita yang mudah dibaca dan akurat.',
     'about.m2title': 'Bilingual Sejak Awal', 'about.m2desc': 'Setiap artikel di Synet tersedia sepenuhnya dalam Bahasa Indonesia dan Inggris.',

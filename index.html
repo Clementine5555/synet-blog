@@ -419,6 +419,12 @@
       loadFeatured();
       loadLatest();
     });
+
+    // Re-render semua card kalau bahasa diganti
+    document.addEventListener('langChange', () => {
+      loadFeatured();
+      loadLatest();
+    });
   </script>
 </body>
 </html>
